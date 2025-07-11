@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  .form {
+    width: 100%;
+    height: 50vh;
+    background-color: black;
+    color: gray;
+    display: flex;
+    padding: 20px;
+    box-sizing: border-box;
+    gap: 5px;
+  }
+  .phan {
+    background-color: black;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  .phan li a {
+    text-decoration: none;
+    color: white;
+    
+  }
+  .phan li  {
+    list-style: none;
+  }
+  .phan ul li a {
+    color: gray;
+  }
+  .phan.a {
+    width: 30%;
+    
+
+  }
+  .phan.b {
+    width: 20%;
+  }
+  .phan.c {
+    width: 30%;
+
+  }
+  .phan.d {
+    width: 20%;
+
+  }
+  .phan ul  {
+    margin-top: 20px;
+  }
+  .phan ul li {
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px dashed gray;
+    line-height: 50px;
+  }
+  .phan ul li a {
+    transition: 1s color ;
+  }
+   .phan ul li a:hover {
+    color: white;
+   }
+  .phan.a img {
+    width: 190px;
+
+  }
+  .phan.a p {
+    margin-top: 10px;
+  }
+  .phan.d i {
+    width: 10%;
+    border-right: 1px gray dashed;
+    margin-right: 3px;
+  }
+  .phan ul li:last-child{
+    border-bottom: none;
+  }
+  .phan h3 {
+    color: white;
+  }
+
+</style>
+<body>
+  <div class="form">
+    <div class="phan a">
+      <img src="https://th.bing.com/th/id/R.47a24dae51c40c5ea79df99cad095e9c?rik=cQvtue5QU6j1rw&riu=http%3a%2f%2f3.bp.blogspot.com%2f-_oxB-XaG0bs%2fUNnv6rSGt8I%2fAAAAAAAAHMo%2fHFRBE0tVgq8%2fs1600%2fToyota%2bLogo%2b1.jpg&ehk=pbJg11h8Vwqwp3fGS6fGDnt5USDy1F11sqEmtxPVelE%3d&risl=&pid=ImgRaw&r=0" alt=""> 
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sit amet suscipit est. Nulla iaculis ipsum sit amet leo euismod maximus. Donec malesuada posuere mi, nec scelerisque nibh porta eu.</p>
+      <p>Nullam viverra a velit et sodales. Etiam eu odio quis felis pretium interdum quis in velit</p> 
+    </div>
+  <div class="phan b">
+    <h3>Information Link</h3>
+    <ul>
+      <li><a href="">Home</a></li>
+      <li><a href="">Blog</a></li>
+      <li><a href="">Pricing</a></li>
+      <li><a href="">About</a></li>
+      <li><a href="">Faq</a></li>
+      <li><a href="">Contact</a></li>
+    </ul>
+  </div>  
+  <div class="phan c">
+    <h3>Contact Details</h3>
+    <ul>
+      <li><a href="">info@yoursite.com</a></li>
+      <li><a href="">www.yoursite.com</a></li>
+      <li><address>123 Nguyen Van B, HCM city, VietNam</address></li>
+      <li><a href="">+61 38376 6284</a></li>
+    </ul>
+  </div>
+  <div class="phan d">
+    <h3>Social</h3>
+     <ul>
+          <li><i class="fab fa-facebook-f"></i> 22.543 Likes</li>
+          <li><i class="fab fa-github"></i> 128 Projects</li>
+          <li><i class="fab fa-twitter"></i> 12.860 Followers</li>
+          <li><i class="fab fa-dribbble"></i> 3312 Shots</li>
+          <li><i class="fab fa-pinterest"></i> 3331 Pins</li>
+     </ul>
+  </div>
+  </div>
+</body>
+</html>
