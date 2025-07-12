@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Học web chuẩn</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+    /* Reset */
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  ul {
+    list-style: none;
+  }
+  body {
+    color: #a6a6a6;
+    font-family: Helvetica,sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  section {
+    margin-top: 20px;
+    display: flex;
+    background-color: slategray;
+    gap:40px;
+  }
+  .photo {
+    width: 40%;
+  }
+  .info {
+    width: 60%;
+  }
+  h2 {
+    color: black;
+    margin: 20px 20px 20px 0;
+    font-size: 2rem;
+  }
+  ul {
+    display: grid;
+    grid-template-columns: repeat(3,minmax(150px,1fr));
+    margin-top: 30px;
+  }
+  .more {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 250px;
+    height: 50px;
+    background-color: aqua;
+  }
+  .more a {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    line-height: 50px;
+  }
+  .photo img  {
+    height:90%;
+    object-fit: cover;
+  }
+  li i {
+    color: aqua;
+  }
+  
+
+
+</style>
+</head>
+<body>
+  <section class="learning clearfix">
+    <div class="photo"><img src="https://th.bing.com/th/id/OIP.wfiqkCL2kAnQDQAjrt9gHgHaGL?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Learning system"></div>
+    <div class="info">
+      <h2>We are passionate <em>learning system</em> from London. Do beautiful and easy-to-use digital design &amp; web development</h2>
+      <p class="lead-text">Nullam eu justo quis mi varius malesuada nec vitae magna. Pellentesque nec volutpat neque. Praesent a imperdiet sapien, non placerat purus. Donec et finibus ante. Morbi justo enim, semper pulvinar mollis et, accumsan sed dolor.</p>
+      <ul class="learning-list clearfix">
+        <li><i class="fas fa-check"></i> Custom Shortcodes</li>
+        <li><i class="fas fa-check"></i> Font Awesome Icons</li>
+        <li><i class="fas fa-check"></i> Shopping Layouts</li>
+        <li><i class="fas fa-check"></i> Visual Page Builder</li>
+        <li><i class="fas fa-check"></i> Pre-Defined Colors</li>
+        <li><i class="fas fa-check"></i> Pre-Defined Fonts</li>
+        <li><i class="fas fa-check"></i> Unlimited Shortcodes</li>
+        <li><i class="fas fa-check"></i> AJAX Transitions</li>
+        <li><i class="fas fa-check"></i> Style Changers</li>
+        <li><i class="fas fa-check"></i> Responsive Theme</li>
+        <li><i class="fas fa-check"></i> High Quality Support</li>
+        <li><i class="fas fa-check"></i> Footer Styles</li>
+        <li><i class="fas fa-check"></i> Tons of Layouts</li>
+        <li><i class="fas fa-check"></i> Unlimited Options</li>
+        <li><i class="fas fa-check"></i> Header Styles</li>
+      </ul>
+      <p class="more"><a href="./">Learn more about us</a></p>
+    </div>
+  </section>
+</body>
+</html>
