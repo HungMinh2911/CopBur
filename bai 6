@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        font-size: 16px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    ul {
+        list-style: none;
+    }
+    .banner {
+        color: green;
+        background-color: rgb(241, 226, 226);
+        padding: 10px;
+        position: relative;
+    }
+    h1, .nameuni {
+        text-align: center;
+        
+    }
+    .sdt{
+        position: absolute;
+        bottom: 0;
+        right: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       
+    }
+    .menu {
+        height: 50px;
+        background-color: green;
+        color: white;
+        
+    }
+    .menu ul {
+        display: flex;
+        list-style: none; 
+        justify-content: space-evenly;
+        line-height: 50px;
+        
+    }
+    .menu1 li {
+        flex-basis:14,8% ;
+    }
+    .content {
+        display: flex;
+        gap:10px;
+        margin-top: 10px;
+    }
+    .left {
+        flex: 3;
+    }
+    .right {
+        flex:1;
+    }
+    .left .l1 {
+        width: 100%;
+        height:50px;
+        background-color: green;
+        color: white;
+        font-size: 0.9rem;
+    }
+    .l1 h3 {
+        font-size: 0.9rem;
+        padding-top: 15px;
+    }
+    .l2 {
+        display: grid;
+        grid-template-columns: repeat(4,minmax(200px,1fr));
+        gap: 5px;
+        margin-top: 10px;
+        background-color: gray;
+        padding: 10px;
+    }
+    .l2 li {
+        height: 300px;
+        background-color: white;
+    }
+    .l2 li  {
+        text-align: center;
+        margin-top: 10px;
+    }
+    .l2 li img {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+    }
+    .l2 li p {
+        padding: 10px;
+        color: #333;
+    }
+    .l3 {
+        background-color: aqua;
+        width: 100px;
+        height: 50px;
+        margin: 30px auto;
+        border-radius: 10px;
+        align-content: center;
+    }
+    .l3 a {
+        display: flex;
+        justify-content: center;
+        text-decoration: none;
+        color: white;
+    }
+    .right {
+        background-color: white;
+        padding: 0;
+        font-size: 0.9rem;
+        width: 250px;
+    }
+    .right h3 {
+        background-color: #228B22;
+        color: white;
+        padding: 15px;
+        text-align: center;
+        margin-bottom: 0;
+        font-weight: bold;
+    }
+    .right ul {
+        margin: 0;
+        padding: 0;
+    }
+    .right > ul > li {
+        background-color: #228B22;
+        color: white;
+        padding: 12px 15px;
+        border-bottom: 2px solid white;
+        font-weight: 500;
+    }
+    .right > ul > li:last-child {
+        border-bottom: none;
+    }
+    .right ul ul {
+        margin: 0;
+        padding: 0;
+    }
+    .right ul ul li {
+        background-color: #228B22;
+        color: white;
+        padding: 12px 15px 12px 35px;
+        border-bottom: 2px solid white;
+        font-weight: 400;
+    }
+    .right > ul > li > p {
+        margin: 0;
+        padding: 0;
+    }
+</style>
+<body>
+    <section>
+        <div class="banner">
+            <p><img src="" alt=""></p>
+            <h1>TRUNG TÂM GIỐNG CÂY TRỒNG</h1>
+            <p class="nameuni">Học viện Nông Nghiệp Việt Nam</p>
+            <div class="sdt">
+                <p>Hỗ trợ 24/7</p>
+                <p>0985243659-0914993781</p>
+            </div>
+        </div>
+        <div class="menu">
+            <ul class="menu1">
+                <li>HOME</li>
+                <li>GIỚI THIỆU</li>
+                <li>KỸ THUẬT TRỒNG CÂY</li>
+                <li>DANH MỤC SẢN PHẨM</li>
+                <li>HƯỚNG DẪN MUA HÀNG</li>
+                <li>TIN TỨC-SỰ KIỆN</li>
+                <li>LIÊN HỆ</li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="left">
+                <div class="l1"><h3>GIỐNG CÂY MỚI</h3></div>
+                <ul class="l2">
+                    <li>
+                        <img src="https://images.unsplash.com/photo-1574856344991-aaa31b6f4ce3?w=300&h=200&fit=crop" alt="">
+                        <p>Mít trái dài ruột đỏ Malaysia</p>
+                        <div class="l3"><a href="">Chi tiết</a></div>
+                    </li>
+                    <li>
+                        <img src="https://images.unsplash.com/photo-1580052614034-c55d20bfee3b?w=300&h=200&fit=crop" alt="">
+                        <p>Bưởi da xanh</p>
+                        <div class="l3"><a href="">Chi tiết</a></div>
+                    </li>
+                    <li>
+                        <img src="https://images.unsplash.com/photo-1610832958506-aa56368176cf?w=300&h=200&fit=crop" alt="">
+                        <p>Cây bưởi diễn</p>
+                        <div class="l3"><a href="">Chi tiết</a></div>
+                    </li>
+                    <li>
+                        <img src="https://images.unsplash.com/photo-1582793988951-9aed5509eb97?w=300&h=200&fit=crop" alt="">
+                        <p>Cây chanh không hạt</p>
+                        <div class="l3"><a href="">Chi tiết</a></div>
+                    </li>
+                    <li>
+                        <img src="https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?w=300&h=200&fit=crop" alt="">
+                        <p>Táo siêu ngọt 05</p>
+                        <div class="l3"><a href="">Chi tiết</a></div>
+                    </li>
+                    <li>
+                        <img src="https://images.unsplash.com/photo-1580052614034-c55d20bfee3b?w=300&h=200&fit=crop" alt="">
+                        <p>Cây bưởi luận văn</p>
+                        <div class="l3"><a href="">Chi tiết</a></div>
+                    </li>
+                    <li>
+                        <img src="https://images.unsplash.com/photo-1601004890684-d8cbf643f5f2?w=300&h=200&fit=crop" alt="">
+                        <p>Cây táo tàu</p>
+                        <div class="l3"><a href="">Chi tiết</a></div>
+                    </li>
+                    <li>
+                        <img src="https://images.unsplash.com/photo-1553279768-865429fa0078?w=300&h=200&fit=crop" alt="">
+                        <p>Cây lựu đỏ</p>
+                        <div class="l3"><a href="">Chi tiết</a></div>
+                    </li>
+                </ul>
+            </div>
+            <div class="right">
+                <h3>DANH MỤC SẢN PHẨM</h3>
+                <ul>
+                    <li>
+                        <p>Các giống cây khác</p>
+                        <ul>
+                            <li>Dừa xiêm</li>
+                            <li>Măng Bát Độ</li>
+                        </ul>
+                    </li>
+                    <li>Cây Đinh Lăng nếp</li>
+                    <li>Cây lấy gỗ</li>
+                    <li>Cây Nhót</li>
+                    <li>Cây trầm đen</li>
+                    <li>
+                        <p>Giống cây ăn quả</p>
+                        <ul>
+                            <li>Bưởi da xanh</li>
+                            <li>Bưởi đỏ luận văn</li>
+                            <li>Cam cara ruột đỏ</li>
+                            <li>Cây Bưởi diễn</li>
+                            <li>Cây bưởi Diễn cảnh</li>
+                            <li>Cây bưởi đỏ Tân Lạc</li>
+                            <li>Cây Bưởi giống</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
