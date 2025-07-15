@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    body {
+        background-color: aliceblue;
+        display: flex;
+        height: 100vh;
+        flex-direction: column;
+    }
+    body .toast {
+        margin: auto;
+    }
+    .toast + .toast {
+        margin-top: 10px;
+    }
+    .toast{
+       display: flex;
+       align-items: center;
+       background-color: white;
+       border-radius: 2px;
+       padding: 20px 0;
+       border-left: solid 4px ;
+       min-width: 400px;
+       
+    }
+    .toast__icon , .toast__close {
+        padding: 0 10px;
+    }
+
+    .toast--success {
+        border-color: #47d864;
+    }
+    .toast--success .toast__icon {
+        color:  #47d864;
+    }
+     .toast--warn {
+        border-color: #2f86eb;
+    }
+    .toast--warn .toast__icon {
+        color:  #2f86eb;
+    }
+     .toast--error {
+        border-color: #ffc021;
+    }
+    .toast--error .toast__icon {
+        color:   #ffc021;
+    }
+    .toast__body {
+        flex-grow: 1;
+    }
+    .toast__close {
+        font-size: 20px;
+        color: rgba(0, 0, 0, 0.3);
+        cursor: pointer;
+    }
+    .toast {
+    position: fixed;
+    top: 32px;
+    right: 32px;
+    /* transform: translateX(calc(100% + 32px)); */
+    animation:  slide linear 0.4s , an 1s 2s forwards;
+    }
+    @keyframes slide  {
+        from {
+            /* opacity: 0; */
+            transform: translateX(calc(100% + 32px));
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+    @keyframes an {
+        to {
+            opacity: 0;
+        }
+    }
+</style>
+<body>
+    <div class="toast toast--success ">
+        <div class="toast__icon">
+            <i class="fa fa-check" aria-hidden="true"></i>
+        </div>
+        <div class="toast__body">
+            <h3 class="toast__title">Success</h3>
+            <p class="toast__msg">Pham Hung Minh</p>
+        </div>
+        <div class="toast__close">
+            <i class="fa fa-times" aria-hidden="true"></i>
+        </div>
+
+    </div>
+     <!-- <div class="toast toast--warn">
+        <div class="toast__icon">
+            <i class="fa fa-check" aria-hidden="true"></i>
+        </div>
+        <div class="toast__body">
+            <h3 class="toast__title">Warning</h3>
+            <p class="toast__msg">Pham Thi Lien</p>
+        </div>
+        <div class="toast__close">
+            <i class="fa fa-times" aria-hidden="true"></i>
+        </div>
+
+    </div>
+     <div class="toast toast--error">
+        <div class="toast__icon">
+            <i class="fa fa-check" aria-hidden="true"></i>
+        </div>
+        <div class="toast__body">
+            <h3 class="toast__title">Error</h3>
+            <p class="toast__msg">Nguyen Duc Minh Dang</p>
+        </div>
+        <div class="toast__close">
+            <i class="fa fa-times" aria-hidden="true"></i>
+        </div>
+
+    </div> -->
+</body>
+</html>
