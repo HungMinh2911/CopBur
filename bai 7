@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+
+    }
+    body {
+        font-size: 16px;
+        font-weight: 200;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        background-color: #f8f9fa;
+    }
+    #minh {
+        display: flex;
+        /* height: 50px; */
+        padding: 10px;
+        justify-content: space-between;
+        background-color: white;
+    }
+    .duoi {
+
+        display: flex;
+        margin-top: 10px;
+        gap:30px;
+    }
+    img {
+        width: 134px;
+        height: 67.67px;
+        object-fit: contain;
+    }
+    .nhap {
+        position: relative;
+    }
+    input {
+        width: 450px;
+        height: 15px;
+        border-radius: 5px;
+        padding: 10px;
+        
+    }
+    .tren i {
+        position: absolute;
+        top :20px;
+        right: 30px;
+    }
+    .duoi1 {
+        display: flex;
+    }
+    .duoi1 i {
+        margin-right: 10px;
+    }
+    .menu-content {
+         display: flex;
+        width: 100%;
+        gap: 30px;
+        padding: 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    .menu {
+        /* background-color: aquamarine; */
+        flex: 1;
+        border-radius: 10px;
+        background-color: white;
+    }
+    .infor {
+        flex: 3;
+        background-color: white;
+    }
+    .taskbar {
+        background: linear-gradient(135deg, #1f2937 0%, #374151 100%);
+        display: flex;
+        height: 50px;
+        padding: 10px; 
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+    .list {
+        display: flex;
+        flex-direction: column;
+    }
+    .taskbar h3 {
+        margin-top: 5px;
+    }
+    span {
+        border: 2px solid white;
+        border-radius: 2px;
+        width: 10px;
+        margin-bottom: 2px;
+        margin-right: 3px;
+    }
+    .it li {
+        padding: 20px 0px 20px 30px ;
+        border: 1px solid gainsboro;
+        display: flex;
+        /* justify-content: space-evenly; */
+        position: relative;
+    }
+    .item i {
+        /* margin-right: 4px; */
+        font-size: 15px;
+        /* position: absolute; */
+        min-width: 30px;
+    }
+    .item a {
+       text-decoration: none;
+       color: black;
+    }
+    .infor {
+        display: flex;
+        gap:  100px;
+        border-radius: 10px;
+        /* background-color: aqua; */
+        /* align-items: flex-end; */
+        
+    }
+    /* .img {
+        flex :1;
+    } */
+    .img img {
+        width: 100%;
+        height: 400px;
+        object-fit: cotain;
+        border-radius: 10px;
+    }
+    /* .product {
+        flex: 0.5;
+       
+    } */
+    .pro1 , .pro2 {
+        border-bottom: solid gray 2px;
+        padding-bottom: 15px;
+    }
+    h3 {
+        margin-bottom: 10px;
+    }
+    .gia {
+        margin-top: 10px;
+    }
+    .gia div {
+        display: flex;
+    }
+    #gia1 {
+        padding-right: 5px;
+        border-right: solid gray 1px;
+        margin-right: 3px;
+    }
+    .pro2 ul  {
+        list-style: none;
+        display: flex;
+        margin-top: 20px;
+    }
+    .pro2 ul li button {
+        width: 40px;
+        height: 40px;
+        margin-right: 20px;
+        background-color: #ffffff;
+        border: 1px solid rgb(56, 55, 55);
+        border-radius: 5px;
+    }
+    .pro2 {
+         position: relative;
+    }
+    .p1 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        
+    }
+    .p1 a {
+        color: black;
+    }
+    .pro3 {
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+    }
+   .pro3 button {
+        margin-top: 10px;
+        padding: 10px;
+   }   
+   .t1 {
+         background-color:  black;
+         color: white;
+   }
+   .t2 {
+    background-color: white;
+   }
+   .pro1 h2 {
+    font-size: 2rem;
+   }
+</style>
+<body>
+    <div>
+        <div id="minh">
+            <img src="https://www.agribank.com.ph/wp-content/uploads/2019/12/AGRI2.jpg" alt="">
+            <div class="phai">
+                    <div class="tren">
+                        <div class="nhap"> <input type="text" placeholder="Tim kiem"></div>
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </div>
+                    <div class="duoi">
+                        <div class="duoi1">
+                            <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+                            <p>Gio Hang</p>
+                        </div>
+                        <div class="duoi1">
+                            <i class="fa fa-bell" aria-hidden="true"></i>
+                            <p>Thong Bao</p>
+                        </div>
+                        <p>Dang Nhap</p>
+                        <p>Dang Ky</p>
+                    </div>
+            </div>
+        </div>
+        <div class="menu-content">
+            <div class="menu">
+                <div class="taskbar">
+                    <div class="list">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <h3>ALL CATEGORIES</h3>
+                </div>
+                <ul class="it">
+                    <li class="item">
+                        <i class="fa fa-home" aria-hidden="true"></i> 
+                        <a href="">Home</a></li>
+                    <li class="item">
+                        <i class="fa-solid fa-person-dress"></i>
+                        <a href="">Women</a> </li>
+                    <li class="item">
+                        <i class="fa-solid fa-person"></i>
+                        <a href="">Men</a>
+                    </li>
+                    <li class="item">
+                        <i class="fa-solid fa-bed"></i>
+                        <a href="">Furniture</a>
+                    </li>
+                    <li class="item">
+                        <i class="fa-solid fa-camera"></i>
+                        <a href="">Electronics</a> </li>
+                </ul>
+            </div>
+            <div class="infor">
+                <div class="img">
+                    <img src="https://images2.thanhnien.vn/Uploaded/thuyttl/2022_02_21/1-lee-sung-kyung-339.jpg" alt="">
+                </div>
+                <div class="product">
+                    <div class="pro1">
+                        <h3>AM YOUNG</h3>    
+                        <h2>AM YOUNG SO MI TAY</h2>
+                        <h2>LUOI XANH CO VIT</h2>
+                        <div class="gia">
+                            <p>500.00 VND</p>
+                            <div >
+                                <p id="gia1">375.000 VND</p>
+                                <p>25%</p>
+                            </div>
+                        </div>
+                       
+                    </div>   
+                    <div class="pro2">
+                        <p>CHON KICH THUOC</p>
+                        <ul>
+                            <li><button>S</button></li>
+                            <li><button>M</button></li>
+                            <li><button>L</button></li>
+                        </ul>
+                        <div class="p1">   
+                            <a href="">Thong tin nguoi mau</a>
+                            <a href="">Size Guide</a>
+                        </div>        
+                    </div>
+                    <div class="pro3">
+                        <button class="hang_dong t1">DAT MUA</button>
+                        <button class="hang_dong t2">THEM VAO YEU THICH</button>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+       
+
+    </div>
+    
+</body>
+</html>
